@@ -283,13 +283,13 @@
                 var access = await window.monetizado.userHasAccess(web3);
                 if(access) {
                     document.getElementById("protected-content").style.display = "none";
-                    document.getElementById("exclusive-content").style.display = "block";
+                    //document.getElementById("exclusive-content").style.display = "block";
                     document.getElementById("payBtn").style.display = "none";
                     window.parent.postMessage({ type: "showExclusiveContent" }, "*");
                 } else {
                     await verifyContentInfo();
                     document.getElementById("protected-content").style.display = "block";
-                    document.getElementById("exclusive-content").style.display = "none";
+                    //document.getElementById("exclusive-content").style.display = "none";
                     document.getElementById("payBtn").style.display = "block";
                 }
             }
