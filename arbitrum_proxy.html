@@ -314,6 +314,7 @@
                 var amount = document.getElementById("amountToPay").textContent;
                 amount = web3.utils.toWei(amount,"ether");
                 var txId = await window.monetizado.payContent(web3,amount);
+                window.parent.postMessage({ type: "showExclusiveContent" }, "*");
                 return txId;
             }
             checkIfUserHasAccess();
