@@ -17,6 +17,25 @@
         <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
         <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
         <link rel="monetizado" href="" />
+        <script type="text/javascript" src="https://monetizado.github.io/demosmonetizado/js/monetizado.js"></script>
+        <script type="text/javascript">
+            // Solicitar información sobre un elemento link al padre
+            window.parent.postMessage({ type: "requestMonetizadoLink" }, "*");
+
+            // Agregar un event listener para recibir la respuesta del padre
+            window.addEventListener("message", function(event) {
+                // Verificar si el mensaje proviene del padre
+                if (event.source === window.parent) {
+                    // Procesar la información recibida
+                    var linkInfo = event.data;
+                    var linkElement = document.querySelector('link[rel="monetizado"]');
+                    linkElement.href = linkInfo.href;
+                    document.getElementById("monetizadopointer").textContent = linkInfo.href;
+                    document.getElementById("monetizadoorigin").textContent = linkInfo.urlOrigin;
+                }
+            });
+        </script>
+        
         
     </head>
 
@@ -224,25 +243,9 @@
         <script src="js/sb-admin-2.min.js"></script>
 
         <script src="js/jquery.qrcode.min.js"></script>
-        <script type="text/javascript" src="https://monetizado.github.io/demosmonetizado/js/monetizado.js"></script>
-        <script type="text/javascript">
-            // Solicitar información sobre un elemento link al padre
-            window.parent.postMessage({ type: "requestMonetizadoLink" }, "*");
-
-            // Agregar un event listener para recibir la respuesta del padre
-            window.addEventListener("message", function(event) {
-                // Verificar si el mensaje proviene del padre
-                if (event.source === window.parent) {
-                    // Procesar la información recibida
-                    var linkInfo = event.data;
-                    var linkElement = document.querySelector('link[rel="monetizado"]');
-                    linkElement.href = linkInfo.href;
-                    document.getElementById("monetizadopointer").textContent = linkInfo.href;
-                    document.getElementById("monetizadoorigin").textContent = linkInfo.urlOrigin;
-                }
-            });
-        </script>
+        
         <script src="js/network_selector.js" type="text/javascript">
+            
         </script>
 
         <script type="text/javascript">
