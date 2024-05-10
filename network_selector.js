@@ -1,4 +1,4 @@
-const networks = {
+const networksProperties = {
 	"arbitrum:sepolia" : {urlRPC: "https://arbitrum-sepolia.blockpi.network/v1/rpc/public", chainId: 421614, chainName: "Arbitrum Sepolia", currencyName: "ETH", decimals: 18, currencySymbol: "ETH"},
 	"base:testnet": {urlRPC: "https://sepolia.base.org", chainId: 84532, chainName: "Base Sepolia", currencyName: "ETH", decimals: 18, currencySymbol: "ETH"},
 	"berachain:testnet" : {urlRPC: "https://artio.rpc.berachain.com/", chainId: 80085, chainName: "Berachain Testnet", currencyName: "BERA", decimals: 18, currencySymbol: "BERA"},
@@ -17,7 +17,7 @@ const networks = {
 function selectNetworkData() {
     const monetizationTag = document.querySelector('link[rel="monetizado"]');
     const parts = monetizationTag.href.split("://");
-    const networkData = networks[parts[0]];
+    const networkData = networksProperties[parts[0]];
     return networkData;
 }
 
