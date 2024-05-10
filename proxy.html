@@ -177,7 +177,7 @@
                                         <div id="protected-content">
                                             This content is protected, just for subscriptors.
                                             
-                                            To get access to the exclusive content, you need to pay: <span id="amountToPay"></span> ETH
+                                            To get access to the exclusive content, you need to pay: <span id="amountToPay"></span> <span id="currencyToPay"></span>
                                 
                                             <button id="payBtn" onclick="payForAccess()">Pay and access</button>
                                         </div>
@@ -301,7 +301,7 @@
                 var info = await window.monetizado.getContentInfo(web3);
                 if(info != null) {
                     document.getElementById("amountToPay").textContent = web3.utils.fromWei(info.accessCost.toBigInt(),"ether");
-                    
+                    document.getElementById("currencyToPay").textContent = networkSelected.currencySymbol;
                 }
             }
 
