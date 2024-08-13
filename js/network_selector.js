@@ -23,6 +23,7 @@ function selectNetworkData() {
 		"rootstock:testnet": {urlRPC: "https://public-node.testnet.rsk.co", chainId: 31, chainName: "Rootstock Testnet", currencyName: "tRBTC", decimals: 18, currencySymbol: "tRBTC"},
 		"scroll:testnet": {urlRPC: "https://sepolia-rpc.scroll.io/", chainId: 534351, chainName: "Scroll Sepolia", currencyName: "ETH", decimals: 18, currencySymbol: "ETH"},
 		"shardeum:testnet": {urlRPC: "https://sphinx.shardeum.org", chainId: 8082, chainName: "Shardeum Sphinx", currencyName: "SHM", decimals: 18, currencySymbol: "SHM"},
+		"shibarium:testnet": {urlRPC: "https://puppynet.shibrpc.com", chainId: 157, chainName: "Puppynet Shibarium", currencyName: "BONE", decimals: 18, currencySymbol: "BONE"},
 		"shido:testnet": {urlRPC: "https://rpc-testnet-nodes.shidoscan.com", chainId: 9007, chainName: "Shido Testnet", currencyName: "SHIDO", decimals: 18, currencySymbol: "SHIDO"},
 		"taraxa:testnet": {urlRPC: "https://rpc.testnet.taraxa.io/", chainId: 842, chainName: "Taraxa Testnet", currencyName: "TARA", decimals: 18, currencySymbol: "TARA"},
 		"theta:testnet": {urlRPC: "https://eth-rpc-api-testnet.thetatoken.org/rpc", chainId: 365, chainName: "Theta Testnet", currencyName: "TFUEL", decimals: 18, currencySymbol: "TFUEL"},
