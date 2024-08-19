@@ -14,6 +14,7 @@ function selectNetworkData() {
 		"etherlink:testnet" : {urlRPC: "https://node.ghostnet.etherlink.com", chainId: 128123, chainName: "Etherlink Testnet", currencyName: "XTZ", decimals: 18, currencySymbol: "XTZ"},
 		"filecoin:testnet" : {urlRPC: "https://filecoin-calibration.drpc.org", chainId: 314159, chainName: "Filecoin Calibration", currencyName: "tFIL", decimals: 18, currencySymbol: "tFIL"},
 		"fuse:testnet" : {urlRPC: "https://rpc.fusespark.io", chainId: 123, chainName: "Fuse Spark Testnet", currencyName: "FUSE", decimals: 18, currencySymbol: "FUSE"},
+		"kii:testnet" : {urlRPC: "https://a.sentry.testnet.kiivalidator.com:8645", chainId: 123454321, chainName: "KiiChain Testnet", currencyName: "kii", decimals: 18, currencySymbol: "kii"},
 		"linea:testnet" : {urlRPC: "https://rpc.sepolia.linea.build", chainId: 59141, chainName: "Linea Sepolia", currencyName: "ETH", decimals: 18, currencySymbol: "ETH"},
 		"lisk:testnet" : {urlRPC: "https://rpc.sepolia-api.lisk.com", chainId: 4202, chainName: "Lisk Sepolia Testnet", currencyName: "ETH", decimals: 18, currencySymbol: "ETH"},
 		"meter:testnet" : {urlRPC: "https://rpctest.meter.io", chainId: 83, chainName: "Meter Testnet", currencyName: "MTR", decimals: 18, currencySymbol: "MTR"},
