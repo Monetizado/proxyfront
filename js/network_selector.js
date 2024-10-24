@@ -1,5 +1,6 @@
 function selectNetworkData() {
 	const networksProperties = {
+		"aia:testnet": {urlRPC: "https://aia-dataseed1-testnet.aiachain.org", chainId: 1320, chainName: "AIA Testnet", currencyName: "AIA", decimals: 18, currencySymbol: "AIA"},
 		"arbitrum:sepolia" : {urlRPC: "https://arbitrum-sepolia.blockpi.network/v1/rpc/public", chainId: 421614, chainName: "Arbitrum Sepolia", currencyName: "ETH", decimals: 18, currencySymbol: "ETH"},
 		"aurora:testnet": {urlRPC: "https://testnet.aurora.dev", chainId: 1313161555, chainName: "Aurora Testnet", currencyName: "ETH", decimals: 18, currencySymbol: "ETH"},
 		"base:testnet": {urlRPC: "https://sepolia.base.org", chainId: 84532, chainName: "Base Sepolia", currencyName: "ETH", decimals: 18, currencySymbol: "ETH"},
