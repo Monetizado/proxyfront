@@ -12,6 +12,7 @@ function selectNetworkData() {
 		"celo:testnet" : {urlRPC: "https://alfajores-forno.celo-testnet.org", chainId: 44787, chainName: "Celo Alfajores", currencyName: "CELO", decimals: 18, currencySymbol: "CELO"},
 		"chiliz:testnet" : {urlRPC: "https://spicy-rpc.chiliz.com/", chainId: 88882, chainName: "Chiliz Spicy Testnet", currencyName: "CHZ", decimals: 18, currencySymbol: "CHZ"},
 		"core:testnet" : {urlRPC: "https://rpc.test.btcs.network", chainId: 1115, chainName: "Core Blockchain Testnet", currencyName: "tCORE", decimals: 18, currencySymbol: "tCORE"},
+		"creator:testnet" : {urlRPC: "https://rpc.creatorchain.io", chainId: 66665, chainName: "Creator Testnet", currencyName: "ETH", decimals: 18, currencySymbol: "ETH"},
 		"duckchain:testnet" : {urlRPC: "https://testnet-rpc.duckchain.io", chainId: 202105, chainName: "DuckChain Testnet", currencyName: "TON", decimals: 18, currencySymbol: "TON"},
 		"educhain:testnet" : {urlRPC: "https://open-campus-codex-sepolia.drpc.org", chainId: 656476, chainName: "Open Campus Codex Sepolia", currencyName: "EDU", decimals: 18, currencySymbol: "EDU"},
 		"etherlink:testnet" : {urlRPC: "https://node.ghostnet.etherlink.com", chainId: 128123, chainName: "Etherlink Testnet", currencyName: "XTZ", decimals: 18, currencySymbol: "XTZ"},
